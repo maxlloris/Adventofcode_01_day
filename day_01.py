@@ -9,13 +9,11 @@ if __name__ == "__main__":
 
     calibracion = load_text("calibracion.txt")
 
-    print(calibracion)
-
 def nums_in_word(word:str)->int:
     """
     Recibe una cadena y devuelve el primer y último numero concatenado devolviendo un entero de dos cifras.
     """
-    accum = 0
+    tow_digit_number = 0
     index = 0
     first_num = None
     last_num = None
@@ -24,9 +22,11 @@ def nums_in_word(word:str)->int:
             first_num = int(word[index])
         if word[index].isdigit():
             last_num = int(word[index])
-            accum = int(str(first_num )+str(last_num))
+            tow_digit_number = int(str(first_num )+str(last_num))
 
-    return accum
+        index = index + 1
+
+    return tow_digit_number
 
 
 def nums_in_list(mix_list):
