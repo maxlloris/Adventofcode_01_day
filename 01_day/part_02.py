@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
 def nums_in_word_v2(word:str, num_dict)->int:
     """
-    Recibe una cadena y un diccionario y extrae el valor la primera y ultima cifra y devuelve una entero de dos cifras
+    Receives a string and extracts the first and last concatenated number, returning a two-digit integer.
     """
     first_digit = None
     last_digit = None
@@ -62,7 +62,7 @@ def nums_in_word_v2(word:str, num_dict)->int:
 
 def nums_in_list(mix_list, num_dict:dict):
     """
-    Recibe una lista e itera sobre ella extrayendo de las cadenas el entero de dos cifras mediante la funcion nums_in_word y sumandolos posteriormente. Devuelve un entero.
+    Receives a list and iterates over it, extracting the two-digit integer from the strings using the nums_in_word function and adding them later. Returns an integer.
     """
     total = 0
     for word in mix_list:
